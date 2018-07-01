@@ -1,0 +1,8 @@
+---
+- name: "Provision a Docker Swarm cluster"
+  hosts: all
+  become: true
+  become_user: root
+  roles:
+    - { role: docker-swarm }
+#    - { role: ansible-dockerswarm }
