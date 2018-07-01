@@ -1,0 +1,26 @@
+>> lsb_release -a
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04 LTS
+Release:        18.04
+Codename:       bionic
+
+>> docker version
+Client:
+ Version:      17.05.0-ce
+ API version:  1.29
+ Go version:   go1.7.5
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.05.0-ce
+ API version:  1.29 (minimum version 1.12)
+ Go version:   go1.7.5
+ OS/Arch:      linux/amd64
+ 
+Install Docker Swarm
+1. sudo apt-get update && sudo apt-get upgrade
+2. sudo nano /etc/apt/sources.list.d/docker.list
+deb https://apt.dockerproject.org/repo ubuntu-xenial main
+
+#sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+3. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
